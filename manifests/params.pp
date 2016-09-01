@@ -7,6 +7,7 @@ class nxlog::params {
   $ext_options                 = undef
   $input_options               = []
   $nxlog_root                  = undef
+  $global_options              = undef
   $output_options              = undef
   $package_name                = $::kernel ? {
     'Linux'   => 'nxlog-ce',
@@ -22,6 +23,7 @@ class nxlog::params {
 
   # Ordering for the config fragments
   $order_header                = '01'
+  $order_global                = '03'
   $order_extension             = '05'
   $order_input                 = '10'
   $order_processor             = '30'

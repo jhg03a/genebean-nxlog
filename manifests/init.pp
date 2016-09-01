@@ -15,6 +15,8 @@ class nxlog (
   $order_input                 = $::nxlog::params::order_input,
   $order_output                = $::nxlog::params::order_output,
   $order_route                 = $::nxlog::params::order_route,
+  $order_global                = $::nxlog::params::order_global,
+  $global_options              = $::nxlog::params::global_options,
   $output_options              = $::nxlog::params::output_options,
   $package_name                = $::nxlog::params::package_name,
   $processor_module            = $::nxlog::params::processor_module,
