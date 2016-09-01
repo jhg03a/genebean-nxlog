@@ -17,7 +17,8 @@
 define nxlog::config::output (
   $conf_dir         = $::nxlog::conf_dir,
   $conf_file        = $::nxlog::conf_file,
-  $output_options   = $::nxlog::output_options) {
+  $order_output     = $::nxlog::order_output,
+  $output_options   = $::nxlog::output_options,) {
 
   concat::fragment { "output_${name}":
     target  => "${conf_dir}/${conf_file}",
