@@ -8,7 +8,7 @@
 # }
 #
 
-define nxlog::config::output (
+define nxlog::config::global (
   $conf_dir         = $::nxlog::conf_dir,
   $conf_file        = $::nxlog::conf_file,
   $order_global     = $::nxlog::order_global,
