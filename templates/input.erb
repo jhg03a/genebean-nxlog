@@ -1,4 +1,6 @@
 <%# Add a blank line before this block %>
 <Input <%= @name %>>
-    <% [*@input_options].each do |input_option| -%><%= "#{input_option}" %>
+    <% [*@input_options].each do |input_option| -%>
+      <%= "#{input_option}" %>
+    <% end %>
 </Input>
