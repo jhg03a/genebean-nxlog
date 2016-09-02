@@ -19,10 +19,7 @@ class nxlog (
   $global_options              = $::nxlog::params::global_options,
   $output_options              = $::nxlog::params::output_options,
   $package_name                = $::nxlog::params::package_name,
-  $processor_module            = $::nxlog::params::processor_module,
-  $processor_input_format      = $::nxlog::params::processor_input_format,
-  $processor_output_format     = $::nxlog::params::processor_output_format,
-  $processor_csv_output_fields = $::nxlog::params::processor_csv_output_fields,
+  $processor_options            = $::nxlog::params::processor_options,
   $route_destination           = $::nxlog::params::route_destination,
   $route_source                = $::nxlog::params::route_source,
 ) inherits ::nxlog::params {

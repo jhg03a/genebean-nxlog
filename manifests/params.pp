@@ -14,10 +14,7 @@ class nxlog::params {
     'Windows' => 'nxlog',
     default   => 'nxlog',
   }
-  $processor_module            = undef
-  $processor_input_format      = undef
-  $processor_output_format     = undef
-  $processor_csv_output_fields = []
+  $processor_options           = undef
   $route_destination           = undef
   $route_source                = undef
 
