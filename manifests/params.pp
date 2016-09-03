@@ -15,8 +15,7 @@ class nxlog::params {
     default   => 'nxlog',
   }
   $processor_options           = undef
-  $route_destination           = undef
-  $route_source                = undef
+  $route_options               = undef
 
   # Ordering for the config fragments
   $order_header                = '01'

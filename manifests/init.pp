@@ -19,9 +19,8 @@ class nxlog (
   $global_options              = $::nxlog::params::global_options,
   $output_options              = $::nxlog::params::output_options,
   $package_name                = $::nxlog::params::package_name,
-  $processor_options            = $::nxlog::params::processor_options,
-  $route_destination           = $::nxlog::params::route_destination,
-  $route_source                = $::nxlog::params::route_source,
+  $processor_options           = $::nxlog::params::processor_options,
+  $route_options               = $::nxlog::params::route_options,
 ) inherits ::nxlog::params {
   if ($nxlog_root) {
     validate_absolute_path($nxlog_root)
