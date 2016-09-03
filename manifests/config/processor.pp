@@ -28,6 +28,6 @@ define nxlog::config::processor (
   concat::fragment { "processor_${name}":
     target  => "${conf_dir}/${conf_file}",
     order   => $order_processor,
-    content => template($processor_template),
+    content => template('nxlog/processor.erb'),
   }
 }
